@@ -1,18 +1,18 @@
-function samples = sample_nonl_pairwise(samples, J, V, n_steps)
-%sample_nonl_pairwise Samples nonlinear pairwise model.
+function samples = sample_semi_pairwise(samples, J, V, n_steps)
+%sample_semi_pairwise Samples semiparametric pairwise model.
 %Applies "n_steps" of Gibbs sampling steps to every row in samples.
 %
-% Syntax: samples = sample_nonl_pairwise(samples, J, V, n_steps)
+% Syntax: samples = sample_semi_pairwise(samples, J, V, n_steps)
 %
 % Inputs:
 %   samples: Initial samples for Gibbs sampling, 
 %            size is number of samples x number of neurons.
-%   J: The coupling matrix J of the nonlinear pairwise model.
-%   V: A function V: R -> R of the nonlinear pairwise model.
+%   J: The coupling matrix J of the semiparametric pairwise model.
+%   V: A function V: R -> R of the semiparametric pairwise model.
 %   n_steps: Number of Gibbs sampling steps to apply to every sample.
 %
 % Outputs:
-%   samples: (Approximate) samples from the nonlinear pairwise model.
+%   samples: (Approximate) samples from the semiparametric pairwise model.
 
 % Initialize.
 [M,n] = size(samples);

@@ -26,7 +26,7 @@ function [J, VK] = fit_Kpairwise(data, J0, VK0, options)
 
 % Initialize
 [M,n] = size(data);
-J0_lin = J0(:); %initial condition for minimization
+J0_lin = J0(:);
 if isrow(VK0)
     VK0 = VK0';
 end
@@ -44,7 +44,7 @@ samples = data(randi(length(data), options.M_samples, 1),:);
 % Start a parallel pool.
 pool = gcp;
 n_pools = pool.NumWorkers;
-% Divide both samples into batches to be processed in parallel.
+% Divide samples into batches to be processed in parallel.
 samples = samples(1:(floor(length(samples)/n_pools)*n_pools),:);
 M_samples = size(samples, 1);
 samples_batch = zeros(M_samples/n_pools, n, n_pools);

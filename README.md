@@ -34,3 +34,12 @@ In the neuroscience context, these models were studied for example in
 > Schneidman E., Berry M. J., II, Segev R., and Bialek W. (2006)<br>
 > Weak pairwise correlations imply strongly correlated network states in a neural population.<br>
 > Nature, 440(7087):1007–12<br>
+
+**Restricted Boltzmann machines (RBMs) have the form:
+
+![pairwise](https://github.com/jhumplik/generative-neural-models/blob/master/doc/rbm.png)
+
+See the reference below for an example application in neuroscience.
+> Köster U., Sohl-Dickstein J., Gray C. M., Olshausen B. A. (2014)<br>
+> Modeling Higher-Order Correlations within Cortical Microcolumns.<br>
+> PLoS Comput Biol 10(7): e1003684.<br>
