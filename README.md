@@ -35,7 +35,7 @@ In the neuroscience context, these models were studied for example in
 > Weak pairwise correlations imply strongly correlated network states in a neural population.<br>
 > Nature, 440(7087):1007–12<br>
 
-**Restricted Boltzmann machines (RBMs) have the form:
+**Restricted Boltzmann machines** (RBMs) have the form:
 
 ![pairwise](https://github.com/jhumplik/generative-neural-models/blob/master/doc/rbm.png)
 
