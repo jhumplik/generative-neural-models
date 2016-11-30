@@ -102,7 +102,6 @@ parfor k = 1:n_pools
 end
 model_cov = sum(model_covs, 2)/n_pools;
 p_K_model = sum(p_Ks, 2)/n_pools;
-disp(num2str(VK(1)));
 % Calculate gradient.
 DJij = (-model_cov + emp_cov(:));
 DK = (-p_K_model + p_K_emp);
